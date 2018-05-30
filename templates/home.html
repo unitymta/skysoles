@@ -50,15 +50,20 @@
 </style>
 <body id="n_home" class="n_skysoles " style="">
 <div id="header-search" class="header-search collapse">
-	<form name="productsearch" method="get" action="/">
-		<input type="hidden" name="rf" value="kw"/>
-		<div class="input-group">
-			<input class="form-control ajax_search" placeholder="Search" value="" id="name_search" autocomplete="off" name="kw" type="text"/>
-			<span class="input-group-btn">
-				<button type="submit" value="Search" class="btn btn-default"><i class="fa fa-search"></i></button>
-			</span>
+	<div class="container">
+		<div class="header-search-content">
+			<div class="icon-close-search"><a href="javascript:void(0)" data-target="#header-search" data-toggle="collapse"></a></div>
+			<form name="productsearch" method="get" action="/">
+				<input type="hidden" name="rf" value="kw"/>
+				<div class="input-group">
+					<input class="form-control ajax_search" placeholder="Search" value="" id="name_search" autocomplete="off" name="kw" type="text"/>
+					<span class="input-group-btn">
+						<button type="submit" value="Search" class="btn btn-default"><i class="fa fa-search"></i></button>
+					</span>
+				</div>
+			</form>
 		</div>
-	</form>
+	</div>
 </div>
 <div class="wrapper-header with-full-width-banner">
 	<div class="container" id="mobile-navbar">

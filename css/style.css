@@ -2021,6 +2021,31 @@ fieldset[disabled] .btn-default.active {
 	color: #363636;
 }
 
+.wrapper-prod-bg #_jstl__images{
+	padding:  0 30px;
+}
+
+.wrapper-prod-bg .slick-arrow::before{
+	background: url('../img/skysoles-bg-detail.png') no-repeat;
+	overflow: hidden; text-indent: -9999px; text-align: left;
+	display: inline-block;
+}
+
+.wrapper-prod-bg .slick-prev::before{
+	background-position: -10px -27px; width: 10px; height: 17px;
+	content: "";
+}
+
+.wrapper-prod-bg .slick-next::before{
+	background-position: -10px -0px; width: 11px; height: 17px;
+	content: "";
+}
+
+.wrapper-prod-bg .alt-images .fancybox{
+	border: 1px solid #ddd;
+	display: inline-block;
+}
+
 .product-name.mobile{
 	display: none;
 }
@@ -2252,8 +2277,21 @@ fieldset[disabled] .btn-default.active {
 }
 
 .wrapper-prod-bg .btn-success{
-	background: #F0BF2A;
+	background: #075197;
 	border: 0;
+	background: #004e9c;
+	background: -moz-linear-gradient(top,#004e9c 0%,#013e88 100%);
+	background: -webkit-linear-gradient(top,#004e9c 0%,#013e88 100%);
+	background: linear-gradient(to bottom,#004e9c 0%,#013e88 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004e9c',endColorstr='#013e88',GradientType=0 );
+}
+
+.wrapper-prod-bg .btn-success:hover {
+    background: #013e88;
+    background: -moz-linear-gradient(top,#013e88 0%,#004e9c 100%);
+    background: -webkit-linear-gradient(top,#013e88 0%,#004e9c 100%);
+    background: linear-gradient(to bottom,#013e88 0%,#004e9c 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#013e88',endColorstr='#004e9c',GradientType=0 );
 }
 
 .form-control {
@@ -2321,11 +2359,24 @@ fieldset[disabled] .btn-default.active {
 
 #n_product .panel-heading .panel-title a{
 	display: block;
+	position: relative;
 }
 
-#n_product .panel-heading .panel-title a i{
-	float: right ;
+#n_product .panel-heading .panel-title a::after{
+	position: absolute;
+	content: "\f068";
+	right: 0;
+	top: 0;
+	font-family: fontawesome;
 }
+
+#n_product .panel-heading .panel-title a.collapsed::after{
+	position: absolute;
+	content: "\f067";
+	right: 0;
+	top: 0;
+}
+
 .panel-heading .panel-title > a > .fa {
 	margin-right: 5px;
 }

@@ -1071,10 +1071,13 @@ fieldset[disabled] .btn-default.active {
 	max-width: 1600px;
 	margin: 0 auto
 }
-.homepage-banner ul{padding:0;}
+.homepage-banner ul{
+	padding:0;
+}
 .homepage-banner li{ 
 	list-style: none; 
 	text-align: center; 
+	position: relative;
 }
 .homepage-banner > a,
 .product-banner > a {
@@ -1092,9 +1095,9 @@ fieldset[disabled] .btn-default.active {
     position: absolute;
     margin: 0;
     text-align: center;
-    top: 40%;
+    top: 30%;
 	left: 50%;
-	transform: translate(-40%, -50%);
+	transform: translate(-50%, -30%);
 }
 
 .homepage-banner .caption-banner::before,
@@ -1140,6 +1143,27 @@ fieldset[disabled] .btn-default.active {
 .wrapper-homepage-banner,
 .wrapper-product-banner {
 	position: relative;
+}
+
+.wrapper-homepage-banner .slick-prev{
+	display: none;
+}
+
+.wrapper-homepage-banner .slick-next{
+	width: 42px;
+	height: 23px;
+	top: auto;
+	left: 50%;
+	bottom: 30px;
+	transform: translateX(-50%);
+}
+
+.wrapper-homepage-banner .slick-next::before{
+	content: '';
+	background: url('../img/SkySoles-icon-home-slider.png') no-repeat center;
+	width: 42px;
+	height: 23px;
+	display: inline-block;
 }
 
 #bgvid {

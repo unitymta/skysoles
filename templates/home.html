@@ -212,14 +212,14 @@
 					</div>
 				</a>
 			</li>
-			<!-- <li>
+			<li>
 				<a class="image" href="/">
 					<div class="embed-container">
 						<img src="images/SkySoles-banner.png" alt="">
 					</div>
 					<div class="caption-banner">
 						<h5 class="headline">Designed By Crew<span>For Crew</span></h5>
-						<a href="#" title="shop now"><i class="far fa-chevron-right"></i></a>
+						<a class="shop-now" href="#" title="shop now">shop now<i class="fas fa-chevron-right"></i></a>
 					</div>
 				</a>
 			</li>
@@ -230,10 +230,10 @@
 					</div>
 					<div class="caption-banner">
 						<h5 class="headline">Designed By Crew<span>For Crew</span></h5>
-						<a href="#" title="shop now"><i class="far fa-chevron-right"></i></a>
+						<a class="shop-now" href="#" title="shop now">shop now<i class="fas fa-chevron-right"></i></a>
 					</div>
 				</a>
-			</li> -->
+			</li>
 		</ul>
 	</div>
 </div>
@@ -666,6 +666,17 @@
 
 <script>
 	$(document).ready(function(){
+
+		$('.wrapper-homepage-banner ul').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			autoplay: false,
+			autoplaySpeed: 2000,
+			vertical: true,
+			arrows: true,
+
+		});
+
 		$('.wrapper-gallery-gossip').slick({
 			slidesToShow: 2,
 			slidesToScroll: 1,

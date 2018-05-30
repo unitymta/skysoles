@@ -1635,8 +1635,8 @@ fieldset[disabled] .btn-default.active {
     font-weight: 400;
     line-height: 22px;
     color: #777;
-    max-height: 65px;
-	overflow: hidden;
+    max-height: 90px;
+    overflow: hidden;
 }
 
 @media (max-width: 1199px) {

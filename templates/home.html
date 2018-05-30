@@ -696,6 +696,26 @@
 			autoplaySpeed: 2000,
 			dots: true,
 			arrows: false,
+			responsive: [
+			    {
+			      breakpoint: 991,
+			      settings: {
+			        arrows: false,
+			        centerMode: true,
+			        centerPadding: '40px',
+			        slidesToShow: 3
+			      }
+			    },
+			    {
+			      breakpoint: 767,
+			      settings: {
+			        arrows: false,
+			        centerMode: true,
+			        centerPadding: '40px',
+			        slidesToShow: 1
+			      }
+			    }
+			]
 		});
 	});
 </script>

@@ -814,6 +814,15 @@ fieldset[disabled] .btn-default.active {
 	margin: 9px 0 0;
 }
 
+.icon-close-search a::after{
+	content: "\f00d";
+	position: absolute;
+	display: inline-block;
+	font-family: fontawesome;
+	color: #CCCCCC;
+	font-size: 18px;
+}
+
 @media (max-width: 991px) {
 	.header-search {
 		margin-right: 0;
@@ -842,12 +851,6 @@ fieldset[disabled] .btn-default.active {
 	}
 }
 
-@media (max-width: 1250px) {
-	.header-search {
-		width: 200px;
-	}
-}
-
 .header-search .form-control,
 .header-search .btn {
 	height: 35px;
@@ -873,11 +876,6 @@ fieldset[disabled] .btn-default.active {
 @media (max-width: 1199px) {
 	.wrapper-logo {
 		padding-right: 15px;
-	}
-
-	.header-search {
-		width: auto;
-		position: relative;
 	}
 
 	.header-search .btn {
@@ -1003,16 +1001,21 @@ fieldset[disabled] .btn-default.active {
 }
 .free-shipping p:before{display: inline-block; width: 24px; height: 19px; content: ""; background: url('../img/SkySoles-bg.png') no-repeat 0 0; position: absolute; left: 0; top: 50%; margin-top: -9px;}
 .top-links{float:right;position:absolute;bottom:100%;right:0;margin-bottom:-6px}
-.top-links a{font-size: 13px; color: #333;}
+.top-links a{font-size: 13px; color: #333;display: inline-block;}
 .block-top-link{display: table-cell; vertical-align: middle; padding: 4px  0;}
 .block-top-link .box-link{border-right: 1px solid #ddd;padding: 0 19px;display: inline-block;}
 .block-top-link:last-child .box-link{border-right: 0; padding: 0 0 0 19px;}
+
 @media (max-width: 1199px) {
 	.free-shipping p {
 		font-size: 12px;
 	}
 }
-
+@media (max-width: 991px) {
+	.free-shipping p {
+		font-size: 10px;
+	}
+}
 .navbar-default-collapse {
 	margin-top: 0;
 }
@@ -1160,6 +1163,13 @@ fieldset[disabled] .btn-default.active {
 	font-weight: 700;
 	text-transform: uppercase;
 }
+
+@media (max-width: 1140px) {
+	.homepage-banner .shop-now{
+		font-size: 12px;
+		padding: 0 30px;
+	}
+}
 .homepage-banner .shop-now i{ margin: 0 0 0 10px;}
 
 .wrapper-homepage-banner,
@@ -1186,6 +1196,12 @@ fieldset[disabled] .btn-default.active {
 	width: 42px;
 	height: 23px;
 	display: inline-block;
+}
+
+@media (max-width: 991px) {
+	.wrapper-homepage-banner .slick-next{
+		bottom: 80px;
+	}
 }
 
 #bgvid {
@@ -1238,14 +1254,14 @@ fieldset[disabled] .btn-default.active {
 
 @media (max-width: 1199px) {
 	.homepage-banner .caption-banner .headline {
-		font: 60px "Ubuntu", sans-serif;
+		font: 40px "Ubuntu", sans-serif;
 	    font-weight: 300;
 	}
 }
 
 @media (max-width: 991px) {
 	.homepage-banner .caption-banner .headline {
-		font: 50px "Ubuntu", sans-serif;
+		font: 40px "Ubuntu", sans-serif;
 	    font-weight: 300;
 	}
 }
@@ -1356,11 +1372,23 @@ fieldset[disabled] .btn-default.active {
 	background: #01408b;
 }
 .left-banner img{
-	   position: absolute;
+	position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
 }
+
+@media (max-width: 1400px) {
+	.left-banner img{
+		max-width: 350px;
+	}
+}
+@media (max-width: 991px) {
+	.left-banner img {
+    	max-width: 300px;
+	}
+}
+
 .left-banner .learn-more{
 	color: #fefefe;
 	position: absolute;
@@ -1415,10 +1443,6 @@ fieldset[disabled] .btn-default.active {
 }
 
 @media (max-width: 1199px) {
-	.wrapper-homepage-advert  {
-		height: 375px;
-	}
-
 	.wrapper-galley-heading {
 		height: 13%;
 	}
@@ -1430,7 +1454,7 @@ fieldset[disabled] .btn-default.active {
 
 @media (max-width: 991px) {
 	.wrapper-homepage-advert  {
-		height: 375px;
+		height: 500px;
 	}
 }
 
@@ -1669,7 +1693,6 @@ fieldset[disabled] .btn-default.active {
 }
 .wrapper-featured-products .thumbnail .product-image{
 	width: auto;
-	max-width: 307px;
 }
 .wrapper-featured-products .thumbnail{
 	background: transparent
@@ -1683,6 +1706,7 @@ fieldset[disabled] .btn-default.active {
     line-height: 22px;
     color: #777;
     max-height: 90px;
+    min-height: 90px;
     overflow: hidden;
 }
 
@@ -1695,6 +1719,10 @@ fieldset[disabled] .btn-default.active {
 
 	.wrapper-thumbnail.featured .short-description {
 		font-size: 14px;
+	}
+
+	.wrapper-featured-products .thumbnail.featured .caption{
+		margin: 20px 0 0;
 	}
 }
 
@@ -1725,6 +1753,10 @@ fieldset[disabled] .btn-default.active {
 	.thumb_list h3 + p {
 		font-size: 12px;
 		line-height: 16px;
+	}
+
+	.wrapper-featured-products .thumbnail.featured .caption .price{
+		font-size: 20px;
 	}
 }
 
@@ -1788,6 +1820,14 @@ fieldset[disabled] .btn-default.active {
 
 .thumbnail.featured .buying-options .btn.btn-loads{
 	width: 140px;
+}
+
+@media (max-width: 1199px) {
+	.thumbnail.featured .buying-options .btn.btn-loads {
+    	width: 100px;
+    	font-size: 10px;
+    	padding: 0 15px;
+	}
 }
 
 .thumbnail.featured .buying-options .btn  i{
@@ -3019,6 +3059,11 @@ button.list-group-item:focus {
 .wrapper-footer {
     padding: 20px 0 30px;
     background: #363636;
+}
+
+@media (max-width: 1199px) {
+	.col-xs-6.col-sm-10{width: 75%}
+	.col-xs-6.col-sm-2{width: 25%}
 }
 
 .wrapper-footer h4 {

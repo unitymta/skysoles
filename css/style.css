@@ -3616,6 +3616,7 @@ table.blog-img span {
     height: auto;
 }
 .menu-container{float: left; width: 100%; text-align: center; margin: 21px 0 10px; position: relative;}
+.menu-container{}
 .menu-content{padding: 0; display: inline-block; width: 100%; }
 .menu-content ul.menu{display: inline-block; width: 648px; padding: 0;}
 .menu-content ul.menu > li{display: inline-block; padding: 0 45px;}

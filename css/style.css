@@ -1738,6 +1738,11 @@ fieldset[disabled] .btn-default.active {
 	display: inline-block;	
 	text-transform: uppercase;
 }
+
+.thumbnail.featured .buying-options .btn.btn-loads{
+	width: 140px;
+}
+
 .thumbnail.featured .buying-options .btn  i{
 	font-size: 10px;
 	margin: 0px 0 0 7px;

@@ -1623,6 +1623,7 @@ fieldset[disabled] .btn-default.active {
 }
 .wrapper-featured-products .thumbnail .product-image{
 	width: auto;
+	max-width: 307px;
 }
 .wrapper-featured-products .thumbnail{
 	background: transparent

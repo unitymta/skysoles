@@ -65,153 +65,191 @@
 	</style>
 
    <body id="n_product" class="n_2017-06-skeletal-custom-00107104 " style="">
-   	<div class="header-search visible-xs">
-		<form name="productsearch" method="get" action="/">
-			<input type="hidden" name="rf" value="kw"/>
-			<div class="input-group">
-				<input class="form-control ajax_search" placeholder="Search" value="" id="name_search" autocomplete="off" name="kw" type="text"/>
-				<span class="input-group-btn">
-					<button type="submit" value="Search" class="btn btn-default"><i class="fa fa-search"></i></button>
-				</span>
+   	<div id="header-search" class="header-search collapse">
+		<div class="container">
+			<div class="header-search-content">
+				<div class="icon-close-search"><a href="javascript:void(0)" data-target="#header-search" data-toggle="collapse"></a></div>
+				<form name="productsearch" method="get" action="/">
+					<input type="hidden" name="rf" value="kw"/>
+					<div class="input-group">
+						<input class="form-control ajax_search" placeholder="Search here" value="" id="name_search" autocomplete="off" name="kw" type="text"/>
+						<span class="input-group-btn">
+							<button type="submit" value="Search" class="btn btn-default"></button>
+						</span>
+					</div>
+				</form>
 			</div>
-		</form>
+		</div>
 	</div>
     <div class="wrapper-header with-full-width-banner">
-		<div class="container" id="mobile-navbar">
-			<div class="wrapper-header-top">
-				<div class="row">
-					<div class="col-xs-6">
-						<div class="free-shipping"><p>Free Shipping Australia and New Zealand</p></div>
-					</div>
-					<div class="col-xs-6"></div>
+	<div class="container" id="mobile-navbar">
+		<div class="wrapper-header-top">
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+					<div class="free-shipping"><p>Free Shipping Australia and New Zealand</p></div>
 				</div>
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"></div>
 			</div>
-			<div class="wrapper-inner-header">
-				<div class="row">
-					<div class="col-xs-2 col-sm-3 col-md-4">
-						
+		</div>
+		<div class="wrapper-inner-header">
+			<div class="row">
+				<div class="col-xs-3 col-sm-4 col-md-4">
+					<a class="menu-mobile hidden-lg hidden-md collapsed" href="javascript:void(0)" title="Menu mobile" data-target="#menu-mobile" data-toggle="collapse"><i class="fas fa-bars"></i></a>
+				</div>
+				<div class="col-xs-6 col-sm-4 col-md-4 wrapper-logo">
+					<div class="inner-logo">
+						<a href="http://rainstormstudio.neto.com.au" title="Rainstorm Studio">
+							<img class="logo" src="images/website_logo.png" alt="Rainstorm Studio"/>
+						</a>
 					</div>
-					<div class="col-xs-7 col-sm-6 col-md-4 wrapper-logo">
-						<div class="inner-logo">
-							<a href="http://rainstormstudio.neto.com.au" title="Rainstorm Studio">
-								<img class="logo" src="images/website_logo.png" alt="Rainstorm Studio"/>
-							</a>
-						</div>
-					</div>
-					<div class="col-xs-3 col-sm-3 col-md-4">
-						<div class="top-links">
-							<div class="block-top-link"><div class="box-link"><a href="#" title="Search"><img src="images/icons/SkySoles-icon-search.png"></a></div></div>
-							<div class="block-top-link">
-								<div class="box-link">
-									
-									<a href="#fancyboxCurrency" class="fancybox"><i class="fas fa-dollar-sign"></i>  Currency <i class="fas fa-angle-down"></i></a>
-										<div id="fancyboxCurrency" style="display: none;">
-											<h3><i class="fa fa-money"></i> Change Currency</h3>
-											<ul class="list-currency">
-												<li><a href="#" onclick="dc_select_currency('AUD');"><img src="/assets/themes/skysoles/img/flags/aud.png?1522204231" width="32px" height="32px" Alt="View prices in Australian Dollars" title="View prices in Australian Dollars"/> <span><i class="fa fa-dollar"></i> AUD</span></a></li>
-												<li><a href="#" onclick="dc_select_currency('NZD');"><img src="/assets/themes/skysoles/img/flags/nzd.png?1522204231" width="32px" height="32px" Alt="View prices in NZ Dollars" title="View prices in NZ Dollars" style="cursor: hand; cursor:pointer;"/> <span><i class="fa fa-dollar"></i> NZD</span></a></li>
-												<li><a href="#" onclick="dc_select_currency('USD');"><img src="/assets/themes/skysoles/img/flags/usd.png?1522204231" width="32px" height="32px" Alt="View prices in US Dollars" title="View prices in US Dollars" style="cursor: hand; cursor:pointer;"/> <span><i class="fa fa-dollar"></i> USD</span></a></li>
-												<li><a href="#" onclick="dc_select_currency('GBP');"><img src="/assets/themes/skysoles/img/flags/gbp.png?1522204231" width="32px" height="32px" Alt="View prices in Pounds" title="View prices in Pounds" style="cursor: hand; cursor:pointer;"/> <span><i class="fa fa-gbp"></i> GBP</span></a></li>
-												<li><a href="#" onclick="dc_select_currency('EUR');"><img src="/assets/themes/skysoles/img/flags/euro.png?1522204231" width="32px" height="32px" Alt="View prices in Euro" title="View prices in Euro"/> <span><i class="fa fa-euro"></i> EURO</span></a></li>
-												<li><a href="#" onclick="dc_select_currency('JPY');"><img src="/assets/themes/skysoles/img/flags/japan.png?1522204231" width="32px" height="32px" Alt="View prices in Japanese Yen" title="View prices in Japanese Yen" style="cursor: hand; cursor:pointer;"/> <span><i class="fa fa-jpy"></i> JPY</span></a></li>
-												<li><a href="#" onclick="dc_select_currency('AED');"><img src="/assets/themes/skysoles/img/flags/uae.png?1522204231" width="32px" height="32px" Alt="View prices in UAE Dirham" title="View prices in UAE Dirham" style="cursor: hand; cursor:pointer;"/> <span><i class="fa fa-uae"></i> UAE</span></a></li>
-												<li><a href="#" onclick="dc_select_currency('CAD');"><img src="/assets/themes/skysoles/img/flags/canada.png?1522204231" width="32px" height="32px" Alt="View prices in Canadian Dollar" title="View prices in Canadian Dollar" style="cursor: hand; cursor:pointer;"/> <span><i class="fa fa-dollar"></i> CAD</span></a></li>
-												<li><a href="#" onclick="dc_select_currency('HKD');"><img src="/assets/themes/skysoles/img/flags/hong-kong.png?1522204231" width="32px" height="32px" Alt="View prices in Hongkong Dollar" title="View prices in Hongkong Dollar" style="cursor: hand; cursor:pointer;"/> <span><i class="fa fa-dollar"></i> HKD</span></a></li>
-												<li><a href="#" onclick="dc_select_currency('SGD');"><img src="/assets/themes/skysoles/img/flags/singapore.png?1522204231" width="32px" height="32px" Alt="View prices in Singaporean Dollars" title="View prices in Singaporean Dollars" style="cursor: hand; cursor:pointer;"/> <span><i class="fa fa-dollar"></i> SGD</span></a></li>
-												<li><a href="#" onclick="dc_select_currency('CNY');"><img src="/assets/themes/skysoles/img/flags/china.png?1522204231" width="32px" height="32px" Alt="View prices in Chinese Yuan" title="View prices in Chinese Yuan" style="cursor: hand; cursor:pointer;"/> <span><i class="fa fa-cny"></i> CNY</span></a></li>
-												<li><a href="#" onclick="dc_select_currency('CHF');"><img src="/assets/themes/skysoles/img/flags/switzerland.png?1522204231" width="32px" height="32px" Alt="View prices in Swiss Franc" title="View prices in Swiss Franc" style="cursor: hand; cursor:pointer;"/> <span>CHF</span></a></li>
-												<li><a href="#" onclick="dc_select_currency('HUF');"><img src="/assets/themes/skysoles/img/flags/hungary.png?1522204231" width="32px" height="32px" Alt="View prices in Hungarian Forint" title="View prices in Hungarian Forint" style="cursor: hand; cursor:pointer;"/> <span>HUF</span></a></li>
-												<li><a href="#" onclick="dc_select_currency('CZK');"><img src="/assets/themes/skysoles/img/flags/czech-republic.png?1522204231" width="32px" height="32px" Alt="View prices in Czech Republic Koruna" title="View prices in Czech Republic Koruna" style="cursor: hand; cursor:pointer;"/> <span>CZK</span></a></li>
-												<li><a href="#" onclick="dc_select_currency('IDR');"><img src="/assets/themes/skysoles/img/flags/indonesia.png?1522204231" width="32px" height="32px" Alt="View prices in Indonesian Rupiah" title="View prices in Indonesian Rupiah" style="cursor: hand; cursor:pointer;"/> <span>IDR</span></a></li>
-												<li><a href="#" onclick="dc_select_currency('INR');"><img src="/assets/themes/skysoles/img/flags/india.png?1522204231" width="32px" height="32px" Alt="View prices in Indian Rupee" title="View prices in Indian Rupee" style="cursor: hand; cursor:pointer;"/> <span><i class="fa fa-inr" aria-hidden="true"></i>INR</span></a></li>
-												<li><a href="#" onclick="dc_select_currency('ZAR');"><img src="/assets/themes/skysoles/img/flags/south-africa.png?1522204231" width="32px" height="32px" Alt="View prices in South African Rand" title="View prices in South African Rand" style="cursor: hand; cursor:pointer;"/> <span>ZAR</span></a></li>
-											</ul>
-										</div>
-									</div>
-							</div>
-							<div class="block-top-link"><div class="box-link"><a href="/_myacct/" title="My account"><i class="far fa-user"></i></a></div></div>
-							<div class="block-top-link">
-								<div class="box-link">
-									<div id="header-cart" class="hidden-xs btn-group">
-										<a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-											<img src="images/SkySoles-icon-cart.png" alt="Cart" /> <span rel="a2c_item_count" class="total-cart-items">0</span>
-										</a>
-										<ul class="dropdown-menu">
-											<li class="box" id="neto-dropdown">
-												<div class="body padding" id="cartcontents"></div>
-												<div class="footer"></div>
-											</li>
+				</div>
+				<div class="col-xs-2 col-sm-4 col-md-4">
+					<div class="top-links">
+						<div class="block-top-link"><div class="box-link"><a href="javascript:void(0)" title="Search" data-target="#header-search" data-toggle="collapse"><img src="images/icons/SkySoles-icon-search.png"></a></div></div>
+						<div class="block-top-link hidden-xs">
+							<div class="box-link">
+								
+								<a href="#fancyboxCurrency" class="fancybox"><i class="fas fa-dollar-sign"></i>  Currency <i class="fas fa-angle-down"></i></a>
+									<div id="fancyboxCurrency" style="display: none;">
+										<h3><i class="fa fa-money"></i> Change Currency</h3>
+										<ul class="list-currency">
+											<li><a href="#" onclick="dc_select_currency('AUD');"><img src="/assets/themes/skysoles/img/flags/aud.png?1522204231" width="32px" height="32px" Alt="View prices in Australian Dollars" title="View prices in Australian Dollars"/> <span><i class="fa fa-dollar"></i> AUD</span></a></li>
+											<li><a href="#" onclick="dc_select_currency('NZD');"><img src="/assets/themes/skysoles/img/flags/nzd.png?1522204231" width="32px" height="32px" Alt="View prices in NZ Dollars" title="View prices in NZ Dollars" style="cursor: hand; cursor:pointer;"/> <span><i class="fa fa-dollar"></i> NZD</span></a></li>
+											<li><a href="#" onclick="dc_select_currency('USD');"><img src="/assets/themes/skysoles/img/flags/usd.png?1522204231" width="32px" height="32px" Alt="View prices in US Dollars" title="View prices in US Dollars" style="cursor: hand; cursor:pointer;"/> <span><i class="fa fa-dollar"></i> USD</span></a></li>
+											<li><a href="#" onclick="dc_select_currency('GBP');"><img src="/assets/themes/skysoles/img/flags/gbp.png?1522204231" width="32px" height="32px" Alt="View prices in Pounds" title="View prices in Pounds" style="cursor: hand; cursor:pointer;"/> <span><i class="fa fa-gbp"></i> GBP</span></a></li>
+											<li><a href="#" onclick="dc_select_currency('EUR');"><img src="/assets/themes/skysoles/img/flags/euro.png?1522204231" width="32px" height="32px" Alt="View prices in Euro" title="View prices in Euro"/> <span><i class="fa fa-euro"></i> EURO</span></a></li>
+											<li><a href="#" onclick="dc_select_currency('JPY');"><img src="/assets/themes/skysoles/img/flags/japan.png?1522204231" width="32px" height="32px" Alt="View prices in Japanese Yen" title="View prices in Japanese Yen" style="cursor: hand; cursor:pointer;"/> <span><i class="fa fa-jpy"></i> JPY</span></a></li>
+											<li><a href="#" onclick="dc_select_currency('AED');"><img src="/assets/themes/skysoles/img/flags/uae.png?1522204231" width="32px" height="32px" Alt="View prices in UAE Dirham" title="View prices in UAE Dirham" style="cursor: hand; cursor:pointer;"/> <span><i class="fa fa-uae"></i> UAE</span></a></li>
+											<li><a href="#" onclick="dc_select_currency('CAD');"><img src="/assets/themes/skysoles/img/flags/canada.png?1522204231" width="32px" height="32px" Alt="View prices in Canadian Dollar" title="View prices in Canadian Dollar" style="cursor: hand; cursor:pointer;"/> <span><i class="fa fa-dollar"></i> CAD</span></a></li>
+											<li><a href="#" onclick="dc_select_currency('HKD');"><img src="/assets/themes/skysoles/img/flags/hong-kong.png?1522204231" width="32px" height="32px" Alt="View prices in Hongkong Dollar" title="View prices in Hongkong Dollar" style="cursor: hand; cursor:pointer;"/> <span><i class="fa fa-dollar"></i> HKD</span></a></li>
+											<li><a href="#" onclick="dc_select_currency('SGD');"><img src="/assets/themes/skysoles/img/flags/singapore.png?1522204231" width="32px" height="32px" Alt="View prices in Singaporean Dollars" title="View prices in Singaporean Dollars" style="cursor: hand; cursor:pointer;"/> <span><i class="fa fa-dollar"></i> SGD</span></a></li>
+											<li><a href="#" onclick="dc_select_currency('CNY');"><img src="/assets/themes/skysoles/img/flags/china.png?1522204231" width="32px" height="32px" Alt="View prices in Chinese Yuan" title="View prices in Chinese Yuan" style="cursor: hand; cursor:pointer;"/> <span><i class="fa fa-cny"></i> CNY</span></a></li>
+											<li><a href="#" onclick="dc_select_currency('CHF');"><img src="/assets/themes/skysoles/img/flags/switzerland.png?1522204231" width="32px" height="32px" Alt="View prices in Swiss Franc" title="View prices in Swiss Franc" style="cursor: hand; cursor:pointer;"/> <span>CHF</span></a></li>
+											<li><a href="#" onclick="dc_select_currency('HUF');"><img src="/assets/themes/skysoles/img/flags/hungary.png?1522204231" width="32px" height="32px" Alt="View prices in Hungarian Forint" title="View prices in Hungarian Forint" style="cursor: hand; cursor:pointer;"/> <span>HUF</span></a></li>
+											<li><a href="#" onclick="dc_select_currency('CZK');"><img src="/assets/themes/skysoles/img/flags/czech-republic.png?1522204231" width="32px" height="32px" Alt="View prices in Czech Republic Koruna" title="View prices in Czech Republic Koruna" style="cursor: hand; cursor:pointer;"/> <span>CZK</span></a></li>
+											<li><a href="#" onclick="dc_select_currency('IDR');"><img src="/assets/themes/skysoles/img/flags/indonesia.png?1522204231" width="32px" height="32px" Alt="View prices in Indonesian Rupiah" title="View prices in Indonesian Rupiah" style="cursor: hand; cursor:pointer;"/> <span>IDR</span></a></li>
+											<li><a href="#" onclick="dc_select_currency('INR');"><img src="/assets/themes/skysoles/img/flags/india.png?1522204231" width="32px" height="32px" Alt="View prices in Indian Rupee" title="View prices in Indian Rupee" style="cursor: hand; cursor:pointer;"/> <span><i class="fa fa-inr" aria-hidden="true"></i>INR</span></a></li>
+											<li><a href="#" onclick="dc_select_currency('ZAR');"><img src="/assets/themes/skysoles/img/flags/south-africa.png?1522204231" width="32px" height="32px" Alt="View prices in South African Rand" title="View prices in South African Rand" style="cursor: hand; cursor:pointer;"/> <span>ZAR</span></a></li>
 										</ul>
 									</div>
+								</div>
+						</div>
+						<div class="block-top-link hidden-xs"><div class="box-link"><a href="/_myacct/" title="My account"><i class="far fa-user"></i></a></div></div>
+						<div class="block-top-link">
+							<div class="box-link">
+								<div id="header-cart" class="btn-group">
+									<a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+										<img src="images/SkySoles-icon-cart.png" alt="Cart" /> <span rel="a2c_item_count" class="total-cart-items">0</span>
+									</a>
+									<ul class="dropdown-menu">
+										<li class="box" id="neto-dropdown">
+											<div class="body padding" id="cartcontents"></div>
+											<div class="footer"></div>
+										</li>
+									</ul>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			
-			<div class="panel">
-				<div class="collapse navbar-default-collapse" id="mobile-collapse">
-					<div class="row">
-						<div class="col-xs-12">
-							<ul class="nav navbar-nav visible-xs">
-								
-								</ul>
-						</div>
+		</div>
+		
+		<div class="panel">
+			<div class="collapse navbar-default-collapse" id="mobile-collapse">
+				<div class="row">
+					<div class="col-xs-12">
+						<ul class="nav navbar-nav visible-xs">
+							
+							</ul>
 					</div>
-				</div>
-				<div class="collapse navbar-default-collapse" id="search-mobile">
-					<form name="productsearch" method="get" action="/">
-						<input type="hidden" name="rf" value="kw"/>
-						<div class="input-group">
-							<input class="form-control ajax_search" placeholder="Search" value="" id="name_search" autocomplete="off" name="kw" type="text"/>
-							<span class="input-group-btn">
-								<button type="submit" value="Search" class="btn btn-default"><i class="fa fa-search"></i></button>
-							</span>
-						</div>
-					</form>
 				</div>
 			</div>
+			<!-- <div class="collapse navbar-default-collapse" id="search-mobile">
+				<form name="productsearch" method="get" action="/">
+					<input type="hidden" name="rf" value="kw"/>
+					<div class="input-group">
+						<input class="form-control ajax_search" placeholder="Search here" value="" id="name_search" autocomplete="off" name="kw" type="text"/>
+						<span class="input-group-btn">
+							<button type="submit" value="Search" class="btn btn-default"></button>
+						</span>
+					</div>
+				</form>
+			</div> -->
 		</div>
 	</div>
+</div>
 
 	<div class="menu-container">
-		<div class="menu-content">
-			<ul class="menu">
-				<li class="dropdown-hover">
-					<a href="javascript:void(0)" class="dropdown-toggle">Shop</a>
-					<div class="dropdown-menu">
-						<ul>
-							<li>
-								<a class="product-name" href="#" class="nuhover dropdown-toggle" title="Melbourne"><img src="https://www.skysoles.com.au/assets/thumb/Melbourne.png" alt="Melbourne" /></a>
-								<a class="product-name" href="#" class="nuhover dropdown-toggle" title="Melbourne">Melbourne</a>
-							</li>
-							<li>
-								<a class="product-name" href="#" class="nuhover dropdown-toggle" title="Sydney"><img src="https://www.skysoles.com.au/assets/thumb/Sydney.png" alt="Sydney" /></a>
-								<a class="product-name" href="#" class="nuhover dropdown-toggle" title="Sydney">Sydney</a>
-							</li>
-							<li>
-								<a class="product-name" href="#" class="nuhover dropdown-toggle" title="Brisbane"><img src="https://www.skysoles.com.au/assets/thumb/Brisbane.png" alt="Brisbane" /></a>
-								<a class="product-name" href="#" class="nuhover dropdown-toggle" title="Brisbane">Brisbane</a>
-							</li>
-							<li>
-								<a class="product-name" href="#" class="nuhover dropdown-toggle" title="Perth"><img src="https://www.skysoles.com.au/assets/thumb/Perth.png" alt="Perth" /></a>
-								<a class="product-name" href="#" class="nuhover dropdown-toggle" title="Perth">Perth</a>
-							</li>
-							<li>
-								<a class="product-name" href="#" class="nuhover dropdown-toggle" title="Adelaide"><img src="https://www.skysoles.com.au/assets/thumb/Adelaide.png" alt="Adelaide" /></a>
-								<a class="product-name" href="#" class="nuhover dropdown-toggle" title="Adelaide">Adelaide</a>
-							</li>
-						</ul>
-					</div>
-				</li>
-				<li class=""> <a href="/innovation/" >Innovation </a>
-								</li><li class=""> <a href="/galley-gossip/" >Galley Gossip </a>
-								</li><li class=""> <a href="/page/about-us/" >About </a>
-								</li>
-				</ul>
-		</div>
+	<div class="menu-content">
+		<ul class="menu collapse hidden-sm hidden-xs" id="menu-mobile">
+			<li class="dropdown-hover">
+				<a href="javascript:void(0)" class="dropdown-toggle">Shop</a>
+				<div class="dropdown-menu">
+					<ul>
+						<li>
+							<a class="product-name" href="#" class="nuhover dropdown-toggle" title="Melbourne"><img src="https://www.skysoles.com.au/assets/thumb/Melbourne.png" alt="Melbourne" /></a>
+							<a class="product-name" href="#" class="nuhover dropdown-toggle" title="Melbourne">Melbourne</a>
+						</li>
+						<li>
+							<a class="product-name" href="#" class="nuhover dropdown-toggle" title="Sydney"><img src="https://www.skysoles.com.au/assets/thumb/Sydney.png" alt="Sydney" /></a>
+							<a class="product-name" href="#" class="nuhover dropdown-toggle" title="Sydney">Sydney</a>
+						</li>
+						<li>
+							<a class="product-name" href="#" class="nuhover dropdown-toggle" title="Brisbane"><img src="https://www.skysoles.com.au/assets/thumb/Brisbane.png" alt="Brisbane" /></a>
+							<a class="product-name" href="#" class="nuhover dropdown-toggle" title="Brisbane">Brisbane</a>
+						</li>
+						<li>
+							<a class="product-name" href="#" class="nuhover dropdown-toggle" title="Perth"><img src="https://www.skysoles.com.au/assets/thumb/Perth.png" alt="Perth" /></a>
+							<a class="product-name" href="#" class="nuhover dropdown-toggle" title="Perth">Perth</a>
+						</li>
+						<li>
+							<a class="product-name" href="#" class="nuhover dropdown-toggle" title="Adelaide"><img src="https://www.skysoles.com.au/assets/thumb/Adelaide.png" alt="Adelaide" /></a>
+							<a class="product-name" href="#" class="nuhover dropdown-toggle" title="Adelaide">Adelaide</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li class="">
+				<a href="/innovation/" >Innovation </a>
+			</li>
+			<li class=""> 
+				<a href="/galley-gossip/" >Galley Gossip </a>
+			</li>
+			<li class=""> 
+				<a href="/page/about-us/" >About </a>
+			</li>
+			<li class="visible-xs"> 
+				<a href="#fancyboxCurrency" class="fancybox"><i class="fas fa-dollar-sign"></i>  Currency <i class="fas fa-angle-down"></i></a>
+				<div id="fancyboxCurrency" style="display: none;">
+					<h3><i class="fa fa-money"></i> Change Currency</h3>
+					<ul class="list-currency">
+						<li><a href="#" onclick="dc_select_currency('AUD');"><img src="/assets/themes/skysoles/img/flags/aud.png?1522204231" alt="View prices in Australian Dollars" title="View prices in Australian Dollars" width="32px" height="32px"> <span><i class="fa fa-dollar"></i> AUD</span></a></li>
+						<li><a href="#" onclick="dc_select_currency('NZD');"><img src="/assets/themes/skysoles/img/flags/nzd.png?1522204231" alt="View prices in NZ Dollars" title="View prices in NZ Dollars" style="cursor: hand; cursor:pointer;" width="32px" height="32px"> <span><i class="fa fa-dollar"></i> NZD</span></a></li>
+						<li><a href="#" onclick="dc_select_currency('USD');"><img src="/assets/themes/skysoles/img/flags/usd.png?1522204231" alt="View prices in US Dollars" title="View prices in US Dollars" style="cursor: hand; cursor:pointer;" width="32px" height="32px"> <span><i class="fa fa-dollar"></i> USD</span></a></li>
+						<li><a href="#" onclick="dc_select_currency('GBP');"><img src="/assets/themes/skysoles/img/flags/gbp.png?1522204231" alt="View prices in Pounds" title="View prices in Pounds" style="cursor: hand; cursor:pointer;" width="32px" height="32px"> <span><i class="fa fa-gbp"></i> GBP</span></a></li>
+						<li><a href="#" onclick="dc_select_currency('EUR');"><img src="/assets/themes/skysoles/img/flags/euro.png?1522204231" alt="View prices in Euro" title="View prices in Euro" width="32px" height="32px"> <span><i class="fa fa-euro"></i> EURO</span></a></li>
+						<li><a href="#" onclick="dc_select_currency('JPY');"><img src="/assets/themes/skysoles/img/flags/japan.png?1522204231" alt="View prices in Japanese Yen" title="View prices in Japanese Yen" style="cursor: hand; cursor:pointer;" width="32px" height="32px"> <span><i class="fa fa-jpy"></i> JPY</span></a></li>
+						<li><a href="#" onclick="dc_select_currency('AED');"><img src="/assets/themes/skysoles/img/flags/uae.png?1522204231" alt="View prices in UAE Dirham" title="View prices in UAE Dirham" style="cursor: hand; cursor:pointer;" width="32px" height="32px"> <span><i class="fa fa-uae"></i> UAE</span></a></li>
+						<li><a href="#" onclick="dc_select_currency('CAD');"><img src="/assets/themes/skysoles/img/flags/canada.png?1522204231" alt="View prices in Canadian Dollar" title="View prices in Canadian Dollar" style="cursor: hand; cursor:pointer;" width="32px" height="32px"> <span><i class="fa fa-dollar"></i> CAD</span></a></li>
+						<li><a href="#" onclick="dc_select_currency('HKD');"><img src="/assets/themes/skysoles/img/flags/hong-kong.png?1522204231" alt="View prices in Hongkong Dollar" title="View prices in Hongkong Dollar" style="cursor: hand; cursor:pointer;" width="32px" height="32px"> <span><i class="fa fa-dollar"></i> HKD</span></a></li>
+						<li><a href="#" onclick="dc_select_currency('SGD');"><img src="/assets/themes/skysoles/img/flags/singapore.png?1522204231" alt="View prices in Singaporean Dollars" title="View prices in Singaporean Dollars" style="cursor: hand; cursor:pointer;" width="32px" height="32px"> <span><i class="fa fa-dollar"></i> SGD</span></a></li>
+						<li><a href="#" onclick="dc_select_currency('CNY');"><img src="/assets/themes/skysoles/img/flags/china.png?1522204231" alt="View prices in Chinese Yuan" title="View prices in Chinese Yuan" style="cursor: hand; cursor:pointer;" width="32px" height="32px"> <span><i class="fa fa-cny"></i> CNY</span></a></li>
+						<li><a href="#" onclick="dc_select_currency('CHF');"><img src="/assets/themes/skysoles/img/flags/switzerland.png?1522204231" alt="View prices in Swiss Franc" title="View prices in Swiss Franc" style="cursor: hand; cursor:pointer;" width="32px" height="32px"> <span>CHF</span></a></li>
+						<li><a href="#" onclick="dc_select_currency('HUF');"><img src="/assets/themes/skysoles/img/flags/hungary.png?1522204231" alt="View prices in Hungarian Forint" title="View prices in Hungarian Forint" style="cursor: hand; cursor:pointer;" width="32px" height="32px"> <span>HUF</span></a></li>
+						<li><a href="#" onclick="dc_select_currency('CZK');"><img src="/assets/themes/skysoles/img/flags/czech-republic.png?1522204231" alt="View prices in Czech Republic Koruna" title="View prices in Czech Republic Koruna" style="cursor: hand; cursor:pointer;" width="32px" height="32px"> <span>CZK</span></a></li>
+						<li><a href="#" onclick="dc_select_currency('IDR');"><img src="/assets/themes/skysoles/img/flags/indonesia.png?1522204231" alt="View prices in Indonesian Rupiah" title="View prices in Indonesian Rupiah" style="cursor: hand; cursor:pointer;" width="32px" height="32px"> <span>IDR</span></a></li>
+						<li><a href="#" onclick="dc_select_currency('INR');"><img src="/assets/themes/skysoles/img/flags/india.png?1522204231" alt="View prices in Indian Rupee" title="View prices in Indian Rupee" style="cursor: hand; cursor:pointer;" width="32px" height="32px"> <span><i class="fa fa-inr" aria-hidden="true"></i>INR</span></a></li>
+						<li><a href="#" onclick="dc_select_currency('ZAR');"><img src="/assets/themes/skysoles/img/flags/south-africa.png?1522204231" alt="View prices in South African Rand" title="View prices in South African Rand" style="cursor: hand; cursor:pointer;" width="32px" height="32px"> <span>ZAR</span></a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="visible-xs"> 
+				<a href="/_myacct/" title="My account"><i class="far fa-user"></i> My Account</a>
+			</li>
+		</ul>
 	</div>
+</div>
 
 	<div class="wrapper-prod-bg" style="background: rgba(255,255,255,0.65);">
 	 <div class="container">
@@ -316,7 +354,7 @@
 	                         <div class="variation-name">
 	                            <strong>Select Colour</strong>
 	                         </div>
-	                         <div class="specific color-variation">
+	                         <div class="specific colour-variation">
 	                            <input type="hidden" class="_itmspec_val" ref="2" value="8">
 	                            <div class="n-wrapper-form-control">
 	                                <label class="color-checked" style="width: 42px;height: 42px;background: #000;margin-right:5px"><span>black</span></label>
@@ -390,10 +428,10 @@
 	                            <input type="hidden" id="thumb1MP2ZMelbourne_Black_35" name="thumb" value="/assets/thumb/Melbourne.png">
 	                            <input type="hidden" id="sku1MP2ZMelbourne_Black_35" name="sku" value="Melbourne_Black_35">
 	                            <div class="row btn-stack">
-	                               <div class="col-xs-12 col-md-3">
+	                               <div class="col-xs-4 col-sm-3 col-md-3">
 	                                  <input type="number" min="0" class="form-control qty input-lg" id="qty1MP2ZMelbourne_Black_35" name="qty" value="1" size="2" />
 	                               </div>
-	                               <div class="col-xs-12 col-md-9">
+	                               <div class="col-xs-8 col-sm-9 col-md-9">
 	                                  <button type="button" title="Add to Cart" class="addtocart btn btn-success btn-block btn-lg btn-loads" data-loading-text="<i class='fa fa-spinner fa-spin' style='font-size: 14px'></i>" rel="1MP2ZMelbourne_Black_35">add to cart</button>
 	                               </div>
 	                            </div>
@@ -627,31 +665,37 @@
 	<div class="wrapper-whats-in-the-box">
 	 <div class="container">
 	    <h2>What's In The Box</h2>
-	    <div class="row">
-	       <div class="col-xs-4 col-sm-4 col-md-4">
-	          <div class="thumbnail-box">
-	             <a class="image" href="">
-	             <img src="../img/inthebox-1.jpg" width="100%" alt="Care Guide" border="0">
-	             </a>
-	             <h5 class="headline"><a href="">Care Guide</a></h5>
-	          </div>
-	       </div>
-	       <div class="col-xs-4 col-sm-4 col-md-4">
-	          <div class="thumbnail-box">
-	             <a class="image" href="">
-	             <img src="../img/inthebox-2.png" width="100%" alt="Shoe Horn and Shine" border="0">
-	             </a>
-	             <h5 class="headline"><a href="">Shoe Horn and Shine</a></h5>
-	          </div>
-	       </div>
-	       <div class="col-xs-4 col-sm-4 col-md-4">
-	          <div class="thumbnail-box">
-	             <a class="image" href="">
-	             <img src="../img/inthebox-3.png" width="100%" alt="Microfibre Shoe Bag" border="0">
-	             </a>
-	             <h5 class="headline"><a href="">Microfibre Shoe Bag</a></h5>
-	          </div>
-	       </div>
+	    <div class="in-the-box-inner">
+			<div class="in-the-box-1">
+			  <div class="thumbnail-box">
+			     <a class="image" href="">
+			     	<img src="../img/inthebox-1.png" alt="Care Guide" border="0">
+			     </a>
+			     <h5 class="headline"><a href="">Shoe Horn &amp; Shine</a></h5>
+			  </div>
+			  <div class="thumbnail-box">
+			     <a class="image" href="">
+			     	<img src="../img/inthebox-2.png" alt="Shoe Horn and Shine" border="0">
+			     </a>
+			     <h5 class="headline"><a href="">Care Guide</a></h5>
+			  </div>
+			</div>
+			<div class="in-the-box-2">
+			  <div class="thumbnail-box">
+			     <a class="image" href="">
+			     	<img src="../img/inthebox-3.png" alt="Microfibre Shoe Bag" border="0">
+			     </a>
+			     <h5 class="headline"><a href="">Melbourne</a></h5>
+			  </div>
+			</div>
+			<div class="in-the-box-3">
+			  <div class="thumbnail-box">
+			     <a class="image" href="">
+			     	<img src="../img/inthebox-4.png" alt="Shoe Horn and Shine" border="0">
+			     </a>
+			     <h5 class="headline"><a href="">Microfibre Shoe Bag</a></h5>
+			  </div>
+			</div>
 	    </div>
 	 </div>
 	</div>
@@ -838,13 +882,13 @@
          	});
       </script>
       <script>
-	        $('.color-variation label').click(function() {
-	        	if($('.color-variation label').hasClass('color-checked')) {       
-			        $('.color-variation label').removeClass('color-checked');
+	        $('.colour-variation label').click(function() {
+	        	if($('.colour-variation label').hasClass('color-checked')) {       
+			        $('.colour-variation label').removeClass('color-checked');
 			    }  
 			    $(this).addClass('color-checked');
 
-			    var getString =  $('.color-variation label span').html();
+			    var getString =  $('.colour-variation label span').html();
 			    $('.result-color').text(getString);
 			});
 
@@ -916,6 +960,15 @@
 					autoplay: false,
 					autoplaySpeed: 2000,
 					centerPadding: '5px',
+					responsive: [
+					    {
+					      breakpoint: 992,
+					      settings: {
+					        slidesToShow: 3,
+					        slidesToScroll: 1
+					      }
+					    }
+				    ]
 				});
 
       		/* tabs active */

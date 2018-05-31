@@ -56,9 +56,9 @@
 			<form name="productsearch" method="get" action="/">
 				<input type="hidden" name="rf" value="kw"/>
 				<div class="input-group">
-					<input class="form-control ajax_search" placeholder="Search" value="" id="name_search" autocomplete="off" name="kw" type="text"/>
+					<input class="form-control ajax_search" placeholder="Search here" value="" id="name_search" autocomplete="off" name="kw" type="text"/>
 					<span class="input-group-btn">
-						<button type="submit" value="Search" class="btn btn-default"><i class="fa fa-search"></i></button>
+						<button type="submit" value="Search" class="btn btn-default"></button>
 					</span>
 				</div>
 			</form>
@@ -69,28 +69,28 @@
 	<div class="container" id="mobile-navbar">
 		<div class="wrapper-header-top">
 			<div class="row">
-				<div class="col-xs-6">
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 					<div class="free-shipping"><p>Free Shipping Australia and New Zealand</p></div>
 				</div>
-				<div class="col-xs-6"></div>
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"></div>
 			</div>
 		</div>
 		<div class="wrapper-inner-header">
 			<div class="row">
-				<div class="col-xs-2 col-sm-4 col-md-4">
-					<a class="menu-mobile hidden-lg hidden-md" href="javascript:void(0)" title="Menu mobile" data-target="#menu-mobile" data-toggle="collapse"><i class="fas fa-bars"></i></a>
+				<div class="col-xs-3 col-sm-4 col-md-4">
+					<a class="menu-mobile hidden-lg hidden-md collapsed" href="javascript:void(0)" title="Menu mobile" data-target="#menu-mobile" data-toggle="collapse"><i class="fas fa-bars"></i></a>
 				</div>
-				<div class="col-xs-7 col-sm-4 col-md-4 wrapper-logo">
+				<div class="col-xs-6 col-sm-4 col-md-4 wrapper-logo">
 					<div class="inner-logo">
 						<a href="http://rainstormstudio.neto.com.au" title="Rainstorm Studio">
 							<img class="logo" src="images/website_logo.png" alt="Rainstorm Studio"/>
 						</a>
 					</div>
 				</div>
-				<div class="col-xs-3 col-sm-4 col-md-4">
+				<div class="col-xs-2 col-sm-4 col-md-4">
 					<div class="top-links">
 						<div class="block-top-link"><div class="box-link"><a href="javascript:void(0)" title="Search" data-target="#header-search" data-toggle="collapse"><img src="images/icons/SkySoles-icon-search.png"></a></div></div>
-						<div class="block-top-link">
+						<div class="block-top-link hidden-xs">
 							<div class="box-link">
 								
 								<a href="#fancyboxCurrency" class="fancybox"><i class="fas fa-dollar-sign"></i>  Currency <i class="fas fa-angle-down"></i></a>
@@ -118,10 +118,10 @@
 									</div>
 								</div>
 						</div>
-						<div class="block-top-link"><div class="box-link"><a href="/_myacct/" title="My account"><i class="far fa-user"></i></a></div></div>
+						<div class="block-top-link hidden-xs"><div class="box-link"><a href="/_myacct/" title="My account"><i class="far fa-user"></i></a></div></div>
 						<div class="block-top-link">
 							<div class="box-link">
-								<div id="header-cart" class="hidden-xs btn-group">
+								<div id="header-cart" class="btn-group">
 									<a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
 										<img src="images/SkySoles-icon-cart.png" alt="Cart" /> <span rel="a2c_item_count" class="total-cart-items">0</span>
 									</a>
@@ -149,23 +149,23 @@
 					</div>
 				</div>
 			</div>
-			<div class="collapse navbar-default-collapse" id="search-mobile">
+			<!-- <div class="collapse navbar-default-collapse" id="search-mobile">
 				<form name="productsearch" method="get" action="/">
 					<input type="hidden" name="rf" value="kw"/>
 					<div class="input-group">
-						<input class="form-control ajax_search" placeholder="Search" value="" id="name_search" autocomplete="off" name="kw" type="text"/>
+						<input class="form-control ajax_search" placeholder="Search here" value="" id="name_search" autocomplete="off" name="kw" type="text"/>
 						<span class="input-group-btn">
-							<button type="submit" value="Search" class="btn btn-default"><i class="fa fa-search"></i></button>
+							<button type="submit" value="Search" class="btn btn-default"></button>
 						</span>
 					</div>
 				</form>
-			</div>
+			</div> -->
 		</div>
 	</div>
 </div>
 <div class="menu-container">
 	<div class="menu-content">
-		<ul class="menu collapse hidden-sm" id="menu-mobile">
+		<ul class="menu collapse hidden-sm hidden-xs" id="menu-mobile">
 			<li class="dropdown-hover">
 				<a href="javascript:void(0)" class="dropdown-toggle">Shop</a>
 				<div class="dropdown-menu">
@@ -193,11 +193,44 @@
 					</ul>
 				</div>
 			</li>
-			<li class=""> <a href="/innovation/" >Innovation </a>
-							</li><li class=""> <a href="/galley-gossip/" >Galley Gossip </a>
-							</li><li class=""> <a href="/page/about-us/" >About </a>
-							</li>
-			</ul>
+			<li class="">
+				<a href="/innovation/" >Innovation </a>
+			</li>
+			<li class=""> 
+				<a href="/galley-gossip/" >Galley Gossip </a>
+			</li>
+			<li class=""> 
+				<a href="/page/about-us/" >About </a>
+			</li>
+			<li class="visible-xs"> 
+				<a href="#fancyboxCurrency" class="fancybox"><i class="fas fa-dollar-sign"></i>  Currency <i class="fas fa-angle-down"></i></a>
+				<div id="fancyboxCurrency" style="display: none;">
+					<h3><i class="fa fa-money"></i> Change Currency</h3>
+					<ul class="list-currency">
+						<li><a href="#" onclick="dc_select_currency('AUD');"><img src="/assets/themes/skysoles/img/flags/aud.png?1522204231" alt="View prices in Australian Dollars" title="View prices in Australian Dollars" width="32px" height="32px"> <span><i class="fa fa-dollar"></i> AUD</span></a></li>
+						<li><a href="#" onclick="dc_select_currency('NZD');"><img src="/assets/themes/skysoles/img/flags/nzd.png?1522204231" alt="View prices in NZ Dollars" title="View prices in NZ Dollars" style="cursor: hand; cursor:pointer;" width="32px" height="32px"> <span><i class="fa fa-dollar"></i> NZD</span></a></li>
+						<li><a href="#" onclick="dc_select_currency('USD');"><img src="/assets/themes/skysoles/img/flags/usd.png?1522204231" alt="View prices in US Dollars" title="View prices in US Dollars" style="cursor: hand; cursor:pointer;" width="32px" height="32px"> <span><i class="fa fa-dollar"></i> USD</span></a></li>
+						<li><a href="#" onclick="dc_select_currency('GBP');"><img src="/assets/themes/skysoles/img/flags/gbp.png?1522204231" alt="View prices in Pounds" title="View prices in Pounds" style="cursor: hand; cursor:pointer;" width="32px" height="32px"> <span><i class="fa fa-gbp"></i> GBP</span></a></li>
+						<li><a href="#" onclick="dc_select_currency('EUR');"><img src="/assets/themes/skysoles/img/flags/euro.png?1522204231" alt="View prices in Euro" title="View prices in Euro" width="32px" height="32px"> <span><i class="fa fa-euro"></i> EURO</span></a></li>
+						<li><a href="#" onclick="dc_select_currency('JPY');"><img src="/assets/themes/skysoles/img/flags/japan.png?1522204231" alt="View prices in Japanese Yen" title="View prices in Japanese Yen" style="cursor: hand; cursor:pointer;" width="32px" height="32px"> <span><i class="fa fa-jpy"></i> JPY</span></a></li>
+						<li><a href="#" onclick="dc_select_currency('AED');"><img src="/assets/themes/skysoles/img/flags/uae.png?1522204231" alt="View prices in UAE Dirham" title="View prices in UAE Dirham" style="cursor: hand; cursor:pointer;" width="32px" height="32px"> <span><i class="fa fa-uae"></i> UAE</span></a></li>
+						<li><a href="#" onclick="dc_select_currency('CAD');"><img src="/assets/themes/skysoles/img/flags/canada.png?1522204231" alt="View prices in Canadian Dollar" title="View prices in Canadian Dollar" style="cursor: hand; cursor:pointer;" width="32px" height="32px"> <span><i class="fa fa-dollar"></i> CAD</span></a></li>
+						<li><a href="#" onclick="dc_select_currency('HKD');"><img src="/assets/themes/skysoles/img/flags/hong-kong.png?1522204231" alt="View prices in Hongkong Dollar" title="View prices in Hongkong Dollar" style="cursor: hand; cursor:pointer;" width="32px" height="32px"> <span><i class="fa fa-dollar"></i> HKD</span></a></li>
+						<li><a href="#" onclick="dc_select_currency('SGD');"><img src="/assets/themes/skysoles/img/flags/singapore.png?1522204231" alt="View prices in Singaporean Dollars" title="View prices in Singaporean Dollars" style="cursor: hand; cursor:pointer;" width="32px" height="32px"> <span><i class="fa fa-dollar"></i> SGD</span></a></li>
+						<li><a href="#" onclick="dc_select_currency('CNY');"><img src="/assets/themes/skysoles/img/flags/china.png?1522204231" alt="View prices in Chinese Yuan" title="View prices in Chinese Yuan" style="cursor: hand; cursor:pointer;" width="32px" height="32px"> <span><i class="fa fa-cny"></i> CNY</span></a></li>
+						<li><a href="#" onclick="dc_select_currency('CHF');"><img src="/assets/themes/skysoles/img/flags/switzerland.png?1522204231" alt="View prices in Swiss Franc" title="View prices in Swiss Franc" style="cursor: hand; cursor:pointer;" width="32px" height="32px"> <span>CHF</span></a></li>
+						<li><a href="#" onclick="dc_select_currency('HUF');"><img src="/assets/themes/skysoles/img/flags/hungary.png?1522204231" alt="View prices in Hungarian Forint" title="View prices in Hungarian Forint" style="cursor: hand; cursor:pointer;" width="32px" height="32px"> <span>HUF</span></a></li>
+						<li><a href="#" onclick="dc_select_currency('CZK');"><img src="/assets/themes/skysoles/img/flags/czech-republic.png?1522204231" alt="View prices in Czech Republic Koruna" title="View prices in Czech Republic Koruna" style="cursor: hand; cursor:pointer;" width="32px" height="32px"> <span>CZK</span></a></li>
+						<li><a href="#" onclick="dc_select_currency('IDR');"><img src="/assets/themes/skysoles/img/flags/indonesia.png?1522204231" alt="View prices in Indonesian Rupiah" title="View prices in Indonesian Rupiah" style="cursor: hand; cursor:pointer;" width="32px" height="32px"> <span>IDR</span></a></li>
+						<li><a href="#" onclick="dc_select_currency('INR');"><img src="/assets/themes/skysoles/img/flags/india.png?1522204231" alt="View prices in Indian Rupee" title="View prices in Indian Rupee" style="cursor: hand; cursor:pointer;" width="32px" height="32px"> <span><i class="fa fa-inr" aria-hidden="true"></i>INR</span></a></li>
+						<li><a href="#" onclick="dc_select_currency('ZAR');"><img src="/assets/themes/skysoles/img/flags/south-africa.png?1522204231" alt="View prices in South African Rand" title="View prices in South African Rand" style="cursor: hand; cursor:pointer;" width="32px" height="32px"> <span>ZAR</span></a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="visible-xs"> 
+				<a href="/_myacct/" title="My account"><i class="far fa-user"></i> My Account</a>
+			</li>
+		</ul>
 	</div>
 </div>
 <div id="main-content" class="container" role="main">
@@ -545,7 +578,7 @@
 <div class="wrapper-footer">
    <div class="container">
       <div class="row">
-         <div class="col-xs-6 col-sm-10">
+         <div class="col-xs-12 col-sm-10">
             <div class="row">
                <div class="col-xs-6 col-sm-4">
                   <h4>HELP</h4>
@@ -575,7 +608,7 @@
                </div>
             </div>
          </div>
-         <div class="col-xs-6 col-sm-2">
+         <div class="col-xs-12 col-sm-2">
             <h4>Contact Info</h4>
             <p class="email"><i class="fa fa-envelope"></i> <a href="mailto:info@skysoles.com">info@skysoles.com</a></p>
             <p class="phone"><i class="fa fa-phone"></i> <a href="tel:61394162121">+ 61 3 9416 2121</a></p>
@@ -687,6 +720,15 @@
 			slidesToScroll: 1,
 			autoplay: true,
 			autoplaySpeed: 2000,
+			responsive: [
+			    {
+			      breakpoint: 768,
+			      settings: {
+			        slidesToShow: 1,
+			        slidesToScroll: 1
+			      }
+			    }
+		    ]
 		});
 
 		$('.wrapper-testimonials .row').slick({
@@ -720,6 +762,15 @@
 			        }
 			    }
 		    ]
+		});
+
+		$('.dropdown-hover a').click(function(){
+			$('.dropdown-hover .dropdown-menu').show();
+			$(this).css('background-color', '#075197')
+		});
+		$('.menu-mobile').click(function(){
+			$('.dropdown-hover .dropdown-menu').hide();
+			$('.dropdown-hover a').css('background-color', 'transparent');
 		});
 	});
 </script>

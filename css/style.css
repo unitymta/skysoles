@@ -258,6 +258,15 @@ fieldset[disabled] .btn-default.active {
 	#n_product .wrapper-header {
 		margin-bottom: 0;
 	}
+	.wrapper-header-top{
+		position: fixed;
+		background: #fff;
+		width: 100%;
+		z-index: 10004;
+		top: 0;
+		left: 0;
+		padding: 5px 0 0;
+	}
 }
 
 .inner-logo > a {
@@ -799,6 +808,12 @@ fieldset[disabled] .btn-default.active {
 		display: inline-block;
 	}
 }
+@media (max-width: 500px){
+	a.menu-mobile{
+		top: -5px;
+	}
+}
+
 .wrapper-logo {
     text-align: center;
 }
@@ -899,8 +914,9 @@ fieldset[disabled] .btn-default.active {
 		min-width: 130px;
 	}
 	.header-search{
-		margin: 40px 0px 0px;
+		margin: 0px 0px 0px;
 		padding-top: 0px;
+		padding: 40px 0 0;
 	}
 }
 
@@ -989,7 +1005,7 @@ fieldset[disabled] .btn-default.active {
 }
 @media (max-width: 500px){
 	.wrapper-logo{
-		padding: 27px 15px 0 0;
+		padding: 15px 15px 0 0;
 	}
 }
 #header-cart {
@@ -1001,6 +1017,11 @@ fieldset[disabled] .btn-default.active {
 	}
 	#header-cart {
 	    margin-right: 0px;
+	}
+}
+@media (max-width: 500px){
+	.top-links{
+		top: -10px;
 	}
 }
 
@@ -1085,6 +1106,9 @@ fieldset[disabled] .btn-default.active {
 	color: #333;
 	display: inline-block;
 }
+@media (max-width: 500px) {
+	top: -10px;
+}
 
 .block-top-link{display: table-cell; vertical-align: middle; padding: 4px  0;}
 .block-top-link .box-link{border-right: 1px solid #ddd;padding: 0 19px;display: inline-block;}
@@ -1142,6 +1166,7 @@ fieldset[disabled] .btn-default.active {
 
 	.wrapper-inner-header {
 		padding-bottom: 15px;
+		padding-top: 20px;
 	}
 
 	#mobile-collapse .navbar-nav {
@@ -3080,11 +3105,15 @@ fieldset[disabled] .btn-default.active {
 }
 
 .wrapper-whats-in-the-box {
-    padding: 50px 0;
+    padding: 50px 0 70px;
     text-align: center;
     display: inline-block;
 	width: 100%;
 	float: left;
+}
+.wrapper-whats-in-the-box .row > div{
+	display: inline-block;
+	padding: 0 20px;
 }
 .wrapper-whats-in-the-box h2 {
 	margin: 0 0 15px;
@@ -3093,14 +3122,29 @@ fieldset[disabled] .btn-default.active {
 	color: #333;
 	text-transform: uppercase;
 }
+.wrapper-whats-in-the-box .row > div img{
+	max-width: 300px;
+}
 @media (max-width: 991px){
 	.wrapper-whats-in-the-box h2{
 		font-size: 22px;
+	}
+	.wrapper-whats-in-the-box .row > div:nth-child(1){
+		width: 25%;
+	}
+	.wrapper-whats-in-the-box .row > div:nth-child(2){
+		width: 32%;
+	}
+	.wrapper-whats-in-the-box .row > div:nth-child(3){
+		width: 43%;
 	}
 }
 
 .thumbnail-box  {
 	margin-top: 20px;
+}
+.wrapper-whats-in-the-box .thumbnail-box a{
+	display: inline-block;
 }
 
 .thumbnail-box .headline {
@@ -3142,6 +3186,32 @@ fieldset[disabled] .btn-default.active {
 @media (max-width: 767px){
 	.in-the-box-inner > div{
 		padding: 0 10px;
+	}
+}
+@media (max-width: 639px){
+	.wrapper-whats-in-the-box{
+		padding-bottom: 40px;
+	}
+	.wrapper-whats-in-the-box .thumbnail-box .headline a{
+		font-size: 10px
+	}
+}
+@media (max-width: 500px){
+	.wrapper-whats-in-the-box .thumbnail-box .headline a{
+		font-size: 8px
+	}
+	.wrapper-whats-in-the-box .row > div{
+		padding: 0 10px;
+	}
+	.wrapper-whats-in-the-box .row > div:nth-child(1) {
+    	width: 28%;
+	}
+	.wrapper-whats-in-the-box .row > div:nth-child(3){
+		width: 40%;
+	}
+	.wrapper-whats-in-the-box .thumbnail-box,
+	.wrapper-whats-in-the-box .thumbnail-box .headline{
+    	margin-top: 5px;
 	}
 }
 
@@ -3191,15 +3261,22 @@ fieldset[disabled] .btn-default.active {
 		width: 20%;
 		padding: 0 20px;
 	}
-}
-@media (max-width:767px){
 	.thumbnail-four a.image{
+		padding: 0;
+	}
+	.wrapper-four .thumbnail-four a.image{
+		background: transparent;
+	}
+	.wrapper-four .container{
 		padding: 0;
 	}
 }
 @media (max-width:500px){
 	.thumbnail-four{
 		padding: 0 10px;
+	}
+	.wrapper-four .thumbnail-four a.image img{
+		max-width: 36px;
 	}
 }
 
@@ -3750,8 +3827,9 @@ address a {
 	}
 	.wrapper-footer .col-xs-12.col-sm-2{
 		position: absolute;
-		right: -50%;
+		left: 50%;
 		bottom: 126px;
+		max-width: 180px;
 	}
 	.wrapper-footer .nav-pills > li > a{
 		padding-left: 0;
@@ -3767,6 +3845,7 @@ address a {
 @media (max-width: 500px){
 	.wrapper-footer .col-xs-12.col-sm-2{
 		padding: 0;
+		max-width: 155px;
 	}
 	.wrapper-footer .col-xs-12 .col-xs-6:nth-child(2){
 		padding: 0;

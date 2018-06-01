@@ -1892,7 +1892,7 @@ fieldset[disabled] .btn-default.active {
 }
 @media (max-width: 991px) and (min-width: 768px) {
 	.wrapper-featured-products .thumbnail.featured{
-		padding: 20px 20px 0px;
+		padding: 20px 0px 0px;
 	}
 	.col-xs-3.col-sm-4.col-md-3{
 		padding: 0;
@@ -1949,6 +1949,7 @@ fieldset[disabled] .btn-default.active {
 }
 .wrapper-featured-products .thumbnail .product-image{
 	width: auto;
+	max-width: 250px;
 }
 
 @media (max-width: 767px){
@@ -2164,6 +2165,7 @@ fieldset[disabled] .btn-default.active {
 		font-size: 14px;
 	    font-weight: 300;
 	    line-height: 21px;
+	    padding-right: 30px;
 	}
 
 	.thumbnail.featured .buying-options .btn {
@@ -2202,6 +2204,9 @@ fieldset[disabled] .btn-default.active {
 	    display: inline-block !important;
 	    line-height: normal !important;
 	    vertical-align: middle;
+	}
+	.wrapper-thumbnail.featured .short-description{
+		padding-right: 0;
 	}
 }
 
@@ -2360,7 +2365,20 @@ fieldset[disabled] .btn-default.active {
 	width: 100%;
 	float: left;
 }
-
+.wrapper-prod-bg .thumbnail-images{
+	padding: 0 30px;
+}
+.thumbnail-images .slick-initialized .slick-slide{
+	padding:  0 10px;
+}
+.thumbnail-images .slick-initialized .slick-slide img{
+	margin: 0;
+}
+@media (max-width: 991px) {
+	.thumbnail-images .slick-initialized .slick-slide{
+		padding: 0 5px;
+	}
+}
 @media (max-width: 767px) {
 	#n_product .breadcrumb {
 		margin: 20px 0;
@@ -2630,6 +2648,11 @@ fieldset[disabled] .btn-default.active {
 	display: inline-block;
 	margin: 0 8px 0 0;
 }
+.colour-variation ._itmspec_lnk._itmspec_selected{
+	background-image: url('../img/SkySoles-icon-check-color.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
 .colour-variation ._itmspec_lnk span{
 	width: 42px;
 	height: 42px;
@@ -2836,8 +2859,8 @@ fieldset[disabled] .btn-default.active {
     margin-top: 0px;
 }
 
-#accordion .panel:last-child .panel-heading{
-	border-bottom: 1px solid #ccc;
+#accordion .panel:last-child{
+	border-bottom: 1px solid #ccc !important;
 }
 
 .panel-heading .panel-title {
@@ -3132,6 +3155,7 @@ fieldset[disabled] .btn-default.active {
 	text-align: center;
 	display: inline-block;
 	width: 100%;
+	background: url(../img/SkySoles-bg-homepage-content.png) !important;
 	float: left;
 }
 .wrapper-four .row > div {
@@ -3313,7 +3337,7 @@ and (orientation : portrait) {
 		background-position: center center;
 	}
 	.wrapper-four {
-		background: url(../img/homepage-content-bg.jpg) !important;
+		background: url(../img/SkySoles-bg-homepage-content.png) !important;
 	}
 
 }

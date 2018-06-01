@@ -2501,8 +2501,9 @@ fieldset[disabled] .btn-default.active {
 
 .wrapper-pricing > div {
     float: left;
-    margin-left: 15px;
     line-height: 46px;
+    width: 100%;
+    position: relative;
 }
 
 @media (max-width: 600px) {
@@ -2522,9 +2523,35 @@ fieldset[disabled] .btn-default.active {
     margin-top: 5px;
 	margin-bottom: -5px;
 }
+.wrapper-pricing .note{
+	position: absolute;
+	top: 9px;
+	left: 30%;
+	font-size: 13px;
+	text-transform: uppercase;
+	color: #666;
+	background: #DDDDDD;
+	padding: 0 20px;
+	line-height: 20px;
+}
+@media (max-width: 1199px){
+	.wrapper-pricing .note{
+		margin:  0 0 0 30px;
+	}
+}
+@media (max-width: 991px){
+	.wrapper-pricing .note{
+		left: 40%;
+	}
+}
 @media (max-width: 767px){
 	.wrapper-pricing {
 		margin-top: 50px;
+	}
+	.wrapper-pricing .note{
+		left: auto;
+		margin: 0;
+		right: 0;
 	}
 }
 
@@ -2590,32 +2617,25 @@ fieldset[disabled] .btn-default.active {
 
 .colour-variation{
 	display: inline-block;
-}
-
-.colour-variation label{
+	margin: 0 0 10px;
 	position: relative;
-	float: left ;
 }
-
-.colour-variation label span{
-	display: none;
+.colour-variation ._itmspec_listitm {
+    float: left;
+    margin: 0;
 }
-
-.colour-variation label:hover{
-	cursor: pointer;
+.colour-variation ._itmspec_lnk{
+	width: 42px;
+	height: 42px;
+	display: inline-block;
+	margin: 0 8px 0 0;
 }
-
-.colour-variation .color-checked::after{
-	position: absolute; 
-	content: "\f00c";
-	left: 50%;
-	top: 50%;
-	font-size: 23px;
-	font-family: fontawesome;
-	color: #fff;
-	transform: translate(-50%, -50%);
+.colour-variation ._itmspec_lnk span{
+	width: 42px;
+	height: 42px;
+	display: inline-block;
+	text-indent: -9999px;
 }
-
 .colour-variation .result-color{
 	display: inline;
 	margin: 10px 0 0 20px;
@@ -2623,6 +2643,12 @@ fieldset[disabled] .btn-default.active {
 	font-weight: 700;
 	font-size: 14px;
 	text-transform: capitalize;
+	position: absolute;
+	left: 100%;
+	min-width: 50px;
+	top: 50%;
+	transform: translateY(-50%);
+	margin: 0 0 0 15px;
 }
 
 @media (max-width: 991px) {
@@ -2677,7 +2703,12 @@ fieldset[disabled] .btn-default.active {
 	background: url(../img/skysoles-bg-main.png) no-repeat;
 	background-position: -10px -114px; width: 22px; height: 20px; 
 }
-
+.extra-options .buying-options .btn.btn-warning::after{
+	background: none;
+}
+.extra-options .buying-options .btn.btn-warning p{
+	margin: 0;
+}
 .extra-options .buying-options .qty {
     font-size: 18px;
     height: 56px;

@@ -2465,8 +2465,8 @@ fieldset[disabled] .btn-default.active {
 	padding:  0 30px;
 }
 .wrapper-prod-bg #_jstl__images .slick-initialized .slick-slide{
+	padding: 0;
 	text-align: center;
-	padding: 0 6px;
 }
 @media (max-width: 1199px){
 	.wrapper-prod-bg #_jstl__images .slick-initialized .slick-slide{
@@ -2769,27 +2769,7 @@ fieldset[disabled] .btn-default.active {
 .extra-options .buying-options {
     padding: 25px 0px;
 }
-.btn-stack .col-xs-4.col-sm-3.col-md-3{
-	padding-right: 0;
-}
-.btn-stack .col-xs-4.col-sm-3.col-md-3::after{
-	position: absolute;
-	content: "";
-	right: 15px;
-	top: 50%;
-	border-top: 6px solid #333333;
-	border-left: 4px solid #fff;
-	border-right: 4px solid #fff;
-	transform: translateY(-50%);
-}
-.extra-options .buying-options .theQty{
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-	height: 58px;
-	text-align: center;
-	padding-left: 0;
-}
+
 .extra-options .buying-options .btn {
     padding: 16px 12px;
     font-size: 18px;
@@ -2865,8 +2845,8 @@ fieldset[disabled] .btn-default.active {
 	.extra-options .buying-options .qty{
 		height: 50px;
 	}
-	.extra-options .buying-options .theQty{
-		height: 52px;
+	.extra-options .buying-options .col-xs-8.col-sm-9{
+		padding-left: 0;
 	}
 }
 @media (max-width: 320px){
